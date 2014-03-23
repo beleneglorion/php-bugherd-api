@@ -61,4 +61,4 @@ $client->api('task')->create('project_id',array(
 
 ### Thanks!
 
-- Thanks to [Kevin Saliou](https://github.com/ornicar) for the php-redmine-api library, great source of inspiration!
+- Thanks to [Kevin Saliou](https://github.com/kbsali/) for the php-redmine-api library, great source of inspiration!
