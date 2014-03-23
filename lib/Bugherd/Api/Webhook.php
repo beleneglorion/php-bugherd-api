@@ -24,7 +24,7 @@ class Webhook extends AbstractApi
      */
     public function all()
     {
-        return $this->retrieveAll('webhooks.json');
+        return $this->retrieveAll('/webhooks.json');
     }
     
     
@@ -58,6 +58,6 @@ class Webhook extends AbstractApi
      */
     public function remove($id)
     {
-        return $this->delete('webhooks/'.  urlencode($id).'.json');
+        return $this->delete('/webhooks/'.  urlencode($id).'.json');
     }
 }
