@@ -30,7 +30,7 @@ Uses [Bugherd API](https://www.bugherd.com/api_v2).
 Through [composer](http://getcomposer.org/download/), simply run :
 
 ```bash
-$ php composer.phar require beleneglorion/bugherd-api:dev-master
+$ php composer.phar require beleneglorion/php-bugherd-api:dev-master
 ```
 
 ## Basic usage of `php-bugherd-api` client
@@ -58,7 +58,6 @@ $client->api('task')->create('project_id',array(
 
 ```
 
-see `example.php`
 
 ### Thanks!
 
