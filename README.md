@@ -9,15 +9,16 @@ Uses [Bugherd API](https://www.bugherd.com/api_v2).
 * Follows PSR-0 conventions and coding standard: autoload friendly
 * API entry points implementation state :
  * *OK Organizations
+ * *OK Users
  * *OK Projects
- * *NOK Users
- * *NOK Tasks
- * *NOK Comments
- * *NOK Webhooks
+ * *OK Tasks
+ * *OK Comments
+ * *OK Webhooks
 
 
 ## Todo
-
+ * Write some doc
+ * handle 404 
 
 
 ## Requirements
