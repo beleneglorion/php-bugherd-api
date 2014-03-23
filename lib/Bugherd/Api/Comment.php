@@ -42,7 +42,9 @@ class Comment extends AbstractApi
             'user_id'     => null,
             'user_email'  => null
         );
-        $data = array_filter(array_merge($defaults, $params));
+        $params = array_filter(array_merge($defaults, $params));
+        
+        $data = array('comment'=>$params);
 
         $path = '/projects/'.urlencode($projectId).'/tasks/'.urlencode($taskId).'/comments.json';
         return $this->post($path,$data);
