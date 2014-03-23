@@ -1,5 +1,5 @@
 {
-    "name": "beleneglorion/bugherd-api",
+    "name": "beleneglorion/php-bugherd-api",
     "type": "library",
     "description": "Bugherd API client",
     "homepage": "https://github.com/beleneglorion/php-bugherd-api",
