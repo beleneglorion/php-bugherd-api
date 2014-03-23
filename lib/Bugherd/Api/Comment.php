@@ -20,7 +20,7 @@ class Comment extends AbstractApi
      */
     public function all($projectId, $taskId)
     {
-        $path = 'projects/'.urlencode($projectId).'/tasks/'.urlencode($taskId).'/comments.json';
+        $path = '/projects/'.urlencode($projectId).'/tasks/'.urlencode($taskId).'/comments.json';
         $this->comments = $this->retrieveAll($path);
 
         return $this->comments;
@@ -44,7 +44,7 @@ class Comment extends AbstractApi
         );
         $data = array_filter(array_merge($defaults, $params));
 
-        $path = 'projects/'.urlencode($projectId).'/tasks/'.urlencode($taskId).'/comments.json';
+        $path = '/projects/'.urlencode($projectId).'/tasks/'.urlencode($taskId).'/comments.json';
         return $this->post($path,$data);
     }
 
