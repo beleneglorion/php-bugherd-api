@@ -58,7 +58,7 @@ class Task extends AbstractApi
      */
     public function show($projectId,$id)
     {
-        return $this->get('projects/'.urlencode($projectId).'/tasks/'.urlencode($id).'.json');
+        return $this->get('/projects/'.urlencode($projectId).'/tasks/'.urlencode($id).'.json');
     }
 
     
