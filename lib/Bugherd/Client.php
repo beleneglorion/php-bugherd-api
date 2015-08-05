@@ -301,7 +301,7 @@ class Client
         curl_setopt($curl, CURLOPT_PORT , $this->port);
         if (80 !== $this->port) {
             curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, $this->checkSslCertificate);
-            curl_setopt($curl, CURLOPT_SSLVERSION,3);
+            curl_setopt($curl, CURLOPT_SSLVERSION,4);
             curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, $this->checkSslHost);
         }
 
