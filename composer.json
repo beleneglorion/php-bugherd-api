@@ -1,15 +1,15 @@
 {
-    "name": "beleneglorion/php-bugherd-api",
+    "name": "thomasjohansen/php-bugherd-api",
     "type": "library",
     "description": "Bugherd API client",
-    "homepage": "https://github.com/beleneglorion/php-bugherd-api",
+    "homepage": "https://github.com/thomasjohansen/php-bugherd-api",
     "keywords": ["bugherd", "api"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Sébastien Thibault",
-            "email": "contact@sebastien-thibault.com",
-            "homepage": "http://sebastien-thibault.com",
+            "name": "Thomas Johansen",
+            "email": "thomas@unitmakers.dk",
+            "homepage": "http://unitmakers.dk",
             "role": "Developer"
         }
     ],
