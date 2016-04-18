@@ -80,20 +80,17 @@ abstract class AbstractApi
      */
     protected function retrieveAll($endpoint, array $params = array())
     {
-        if (empty($params)) {
-            return $this->get($endpoint);
-        }
-
-
         unset($params['page']);
         $ret= $this->get($endpoint . '?' . http_build_query($params));
-        $nbResult = $ret['meta']['count'];
-        if( $nbResult > 100) {
-            $nbPage = ceil($nbResult/100);
-            for($p = 2;$p <= $nbPage; $p++) {
-                 $params['page'] = $p;
-                 sleep(3); //  this is evil but bugherd enforce this...
-                 $ret = array_merge_recursive($ret, $this->get($endpoint . '?' . http_build_query($params))); 
+        if (isset($ret['meta']['count'])) {
+            $nbResult = $ret['meta']['count'];
+            if ($nbResult > 100) {
+                $nbPage = ceil($nbResult / 100);
+                for ($p = 2; $p <= $nbPage; $p++) {
+                    $params['page'] = $p;
+                    sleep(3); //  this is evil but bugherd enforce this...
+                    $ret = array_merge_recursive($ret, $this->get($endpoint . '?' . http_build_query($params)));
+                }
             }
         }
 
